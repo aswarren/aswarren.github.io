@@ -18,6 +18,11 @@
             h1, h2, h3, h4, h5, h6 {
                 font-family: sans-serif;
             }
+            .image-center {
+                margin-left:init;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
             .project-menu {
                 display: flex;
                 flex-flow: row wrap;
@@ -43,14 +48,48 @@
                 padding-left: 1em;
                 padding-right: 1em;
             }
+
+			#banner-image {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("images/rickettsia_sgraph2.png");
+			height: 405px;
+            width: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			}
+
+			.hero-text {
+			text-align: center;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			color: white;
+			}
+
+			.hero-text button {
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 10px 25px;
+			color: black;
+			background-color: #ddd;
+			text-align: center;
+			cursor: pointer;
+			}
+
+			.hero-text button:hover {
+			background-color: #555;
+			color: white;
+			}
         </style>
         <title>aswarren</title>
     </head>
     <body>
         <h1>aswarren</h1>
-        <p><b>Andrew Warren</b> computational biology, disease bioinformatics, graphical genomes, ontologies, rna-seq, metagenomics, machine learning</p>
-        <p>Research focus: human health and security.</p>
-        <p>Employment: Biocomplexity Institute, University of Virginia.</p>
+        <p><b>Andrew Warren</b></p>
+        <p> computational biology, disease bioinformatics, graphical genomes, ontologies, rna-seq, metagenomics, machine learning</p>
+        <p>Employment: Biocomplexity Institute, University of Virginia</p>
         <div class="project-menu">
             <a class="card" href="https://twitter.com/aswarren">
                 <div class="card-inner">
@@ -69,5 +108,7 @@
                 </div>
             </a>
         </div>
+		<div id="banner-image">
+		</div>
     </body>
 </html>
